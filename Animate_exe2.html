@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    div{
+      transition:all linear 0.5s;
+      background-color:lightblue;
+      height:200px;
+      width:100%;
+      position:relative;
+      top:0;
+      left:0;
+      
+    }
+    h1 {
+color:green;
+font-size: 20px;
+}
+h2 {
+color:brown;
+font-size: 20px;
+}
+    .ng-hide{
+     
+     height:0;
+     width:0;
+     background-color:transparent;
+    }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+  <body ng-app="myApp" ng-controller="myCtrl">
+   <p> Hide DIV
+     <label> <input type="checkbox" ng-model="myChk"> check</label></p>
+      <div ng-hide="myChk">
+       
+      <h1>Enter a string: <input type="text" ng-model="myTxt"></h1>
+     
+       <h2>The Length od the given string is :{{ myTxt.length }} </h2>
+      </div>
+      <script>
+        var app=angular.module("myApp",['ngAnimate']);
+        app.controller("myCtrl",function($scope){
+         
+        });
+      </script>
+      
+      </body>
+
+</html>

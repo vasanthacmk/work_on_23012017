@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://run.plnkr.co/Fj58xZRgnPbvHN9Q/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><script src="angular.min.js"></script>
+</head><body>
+   <div ng-app="myApp" ng-controller="myCtrl" class="ng-scope">
+     <p> The Person Name is displayed from samp.html file is:</p>
+      <!-- ngInclude: 'samp.html' --><div ng-include="&#39;samp.html&#39;" class="ng-scope">
+ 
+   
+ <h1 class="ng-binding ng-scope">  Hello! sai Ram</h1>
+ 
+
+</div>
+      </div>
+      
+     <script>
+       var app=angular.module("myApp",[]);
+       app.controller("myCtrl",function($scope){
+         $scope.fName="sai";
+         $scope.lName="Ram";
+       });
+     </script>
+          
+
+</body></html>
